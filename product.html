@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<style>
+    product-details {
+        width: 90%;
+        max-width: 1000px;
+
+        margin: 30px auto;
+    }
+
+    /* Details Card */
+
+#product-details {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.product-detail-card {
+  width: 900px;
+  min-height: 500px;
+  background: white;
+  display: flex;
+  gap: 50px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-detail-card img {
+  width: 350px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b12704;
+}
+
+.description {
+  line-height: 1.7;
+  color: #555;
+}
+
+.category {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.product-info button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #ffd814;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+    @media (max-width: 600px) {
+
+  #products {
+    grid-template-columns: 1fr;
+
+    padding: 10px;
+
+    gap: 15px;
+  }
+
+  .product-card {
+    min-height: auto;
+  }
+
+  .product-card img {
+    height: 250px;
+  }
+
+  #product-details {
+    width: 95%;
+  }
+
+  #product-details > div {
+    grid-template-columns: 1fr;
+
+    padding: 20px;
+
+    gap: 20px;
+  }
+
+  #product-details img {
+    height: 280px;
+  }
+
+  #product-details h2 {
+    font-size: 20px;
+  }
+
+}
+
+    @media (max-width: 400px) {
+
+        .product-card img {
+            height: 220px;
+        }
+
+        #product-details img {
+            height: 230px;
+        }
+
+        #product-details>div {
+            padding: 15px;
+        }
+
+    }
+</style>
+
+<body>
+
+    <div id="product-details"></div>
+    <script src="product.js"></script>
+</body>
+
+</html>
